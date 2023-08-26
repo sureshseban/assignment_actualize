@@ -7,9 +7,4 @@ const childrenSchema = new Schema({
     "quantity production": Number
 });
 
-module.exports = model('childrens', {
-    "Child Part Number": { type: String },
-    "Child Part Description": { type: String },
-    "item reference number": { type: Number },
-    "quantity production": { type: Number }
-});    
+module.exports = model('childrens', childrenSchema);    
